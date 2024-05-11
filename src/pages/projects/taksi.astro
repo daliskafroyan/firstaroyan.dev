@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProjectSlider from '../../components/projects/ProjectSlider.astro';
+---
+
+<Layout
+  description="Construction Management app of the Indonesian Ministry of Public Works and Public Housing"
+  title="TAKSI App · Firsta Royan"
+>
+  <section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col items-start gap-4 sm:gap-6">
+        <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">
+          Sistem Informasi Tertib Administrasi Konstruksi (TAKSI)
+        </h2>
+        <p class="text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
+          TAKSI is a digital platform tailored for the unique needs of the Indonesian Ministry of Public Works and Public Housing. It aims to unify all aspects of construction management, including planning, budgeting, execution, monitoring, and reporting, under one intuitive and accessible online system.
+        </p>
+      </div>
+    </div>
+    <ProjectSlider
+      project="TAKSI"
+      images={[
+        { url: '/assets/projects/taksi/taksi-1.png', alt: 'Taksi App' },
+        { url: '/assets/projects/taksi/taksi-2.png', alt: 'Taksi App' },
+        { url: '/assets/projects/taksi/taksi-3.png', alt: 'Taksi App' },
+        { url: '/assets/projects/taksi/taksi-4.png', alt: 'Taksi App' },
+      ]}
+    />
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col items-start gap-2 sm:gap-4">
+        <h3 class="text-xl font-medium sm:text-2xl">Featured Tech Stack</h3>
+        <p class="text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
+          Frontend using Vite + React.js with React-Query for caching mechanism, as the Backend, I'm using Laravel as an API server
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

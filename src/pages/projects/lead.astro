@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProjectSlider from '../../components/projects/ProjectSlider.astro';
+---
+
+<Layout
+  description="An Integrated learning and management system of MRT Jakarta"
+  title="LEAD App · Firsta Royan"
+>
+  <section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col items-start gap-4 sm:gap-6">
+        <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">
+          Learning and Development Dashboard (LEAD)
+        </h2>
+        <p class="text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
+          LEAD is an integrated learning and management system created specifically for the staff of
+          MRT Jakarta. Its primary goal is to streamline training processes, track career
+          development, and bolster operational knowledge, thereby enhancing staff performance and
+          service quality in Jakarta's rapid transit system.
+        </p>
+      </div>
+    </div>
+    <ProjectSlider
+      project="LEAD"
+      images={[
+        { url: '/assets/projects/lead/lead-1.png', alt: 'Lead' },
+        { url: '/assets/projects/lead/lead-2.png', alt: 'Lead' },
+        { url: '/assets/projects/lead/lead-3.png', alt: 'Lead' },
+        { url: '/assets/projects/lead/lead-4.png', alt: 'Lead' },
+      ]}
+    />
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col items-start gap-2 sm:gap-4">
+        <h3 class="text-xl font-medium sm:text-2xl">Featured Tech Stack</h3>
+        <p class="text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
+          Frontend using Next.js, backend using Golang as my attempt to learn new language, deployed
+          in Azure Virtual Machine
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
